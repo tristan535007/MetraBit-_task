@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>To do list</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="header_box">
+        <div><h2>To Do list</h2></div>
+
+        <ul class="contentBar">
+          <li>
+            <p class="titleBar">Scope</p>
+            <p class="counterBar">0</p>
+          </li>
+          <li>
+            <p class="titleBar">Active</p>
+            <p class="counterBar">0</p>
+          </li>
+          <li>
+            <p class="titleBar">Successful</p>
+            <p class="counterBar">0</p>
+          </li>
+        </ul>
+        <button id="addNewToDo"><div>+</div></button>
+      </div>
+      <div
+        style="
+          height: 64px;
+          width: 64px;
+          position: relative;
+          background-color: #889dea;
+        "
+      >
+        <div
+          style="
+            height: 64px;
+            width: 64px;
+            position: relative;
+            background-color: #fff;
+            border-top-left-radius: 41px;
+          "
+        ></div>
+      </div>
+
+      <!-- "content_box" container for future elements -->
+      <ul class="content_box"></ul>
+      <!-- ----------------------------- -->
+      <div class="footer_content">
+        <button id="button_to_do" disabled>
+          <div class="innerButtonText">
+            <span>+</span> <span>Create new task</span>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <script src="./JavaScript/todo_script.js"></script>
+  </body>
+</html>
